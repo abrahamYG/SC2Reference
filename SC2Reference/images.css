@@ -1,0 +1,55 @@
+/* line 1, scss/images.scss */
+body {
+  font-family: Raleway;
+  background-color: black;
+  color: white;
+}
+
+/* line 7, scss/images.scss */
+#gallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 22, scss/images.scss */
+.reference_image {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.reference_image img {
+  width: 120px;
+}
+
+/* line 38, scss/images.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div.tip {
+	font-size: 0.8em;
+	max-width:600px;
+	text-align:justify;
+}
