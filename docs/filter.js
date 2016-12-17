@@ -35,7 +35,7 @@ function get_filter_from_url(){
 	if(window.location.hash.search("/filter/") > 0) {
 		var line = window.location.hash.slice("/filter/".length+1);
 	}
-	return line;
+	return decodeURI(line);
 }
 
 function apply_filter(filtertext) {
@@ -88,7 +88,7 @@ window.onpopstate = function(event) {
     $('#filter').on("search", function() {  
 	    var line = $('#filter').val()
 	    var filterstate = {filter:line};
-	    history.pushState(filterstate,"","#/filter/"+line);
+	    history.pushState(filterstate,"","#/filter/"+encodeURI(line));
 	    apply_filter(line);
     	//alert ("ep1 checked");
     });
